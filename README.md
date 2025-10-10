@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RL Launcher</title>
+  <title>RL Software</title>
   <style>
     body {
       margin: 0;
@@ -109,7 +108,7 @@
 <body>
 
   <header>
-    <div class="logo">RL Launcher</div>
+    <div class="logo">RL Software</div>
     <nav>
       <a href="#">Home</a>
       <a href="#games">Giochi</a>
@@ -120,7 +119,7 @@
   </header>
 
   <section class="hero" id="home">
-    <h1>Benvenuto su RL Launcher</h1>
+    <h1>Benvenuto su RL Software</h1>
     <button onclick="scrollToSection('games')">Scarica Ora</button>
   </section>
 
@@ -158,7 +157,7 @@
   </section>
 
   <footer>
-    &copy; 2025 RL Launcher. Tutti i diritti riservati.
+    &copy; 2025 RL Software. Tutti i diritti riservati.
   </footer>
 
   <script>
