@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Software - Videogiochi</title>
+    <style>
+        /* Stesso stile del sito principale */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        /* Navbar */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* Sezione Videogiochi */
+        section {
+            padding: 60px 0;
+        }
+
+        #games {
+            background-color: #ecf0f1;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        #games h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #games p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .game-card {
+            display: inline-block;
+            background: #fff;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .game-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .game-card a:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>RL Software - Videogiochi</h1>
+            <nav>
+                <ul>
+                    <li><a href="README.html">Home</a></li>
+                    <li><a href="#">Videogiochi</a></li>
+                    <li><a href="README.html">Contattaci</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sezione Videogiochi -->
+    <section id="games">
+        <div class="container">
+            <h2>Scopri i nostri Videogiochi</h2>
+            <p>Esplora i nostri giochi e scarica subito quello che ti piace di più!</p>
+            <h2>I giochi di RL</h2>
+            <div class="game-card">
+                <img src="icons/MRcat.jpg" alt="MRcat">
+                <h3>MRcat</h3>
+                <h4>by RL</h4>
+                <a href="downloads/MRcat.zip" download="MRcat.zip">Scarica ora</a>
+            </div>
+
+            
+        </div>
+        <h2>Altri giochi</h2>
+        <h4>Nessun gioco disponibile</h4>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RL Software. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
