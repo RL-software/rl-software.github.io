@@ -101,8 +101,8 @@
         <h1>RL Software - Home</h1>
         <nav>
             <ul>
-                <li><a href="README.md">Home</a></li>
-                <li><a href="games.md">Videogiochi</a></li>
+                <li><a href="README.html">Home</a></li>
+                <li><a href="games.html">Videogiochi</a></li>
                 <li><a href="#contact">Contattaci</a></li>
             </ul>
         </nav>
