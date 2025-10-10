@@ -1,173 +1,146 @@
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RL Software</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-    }
-    header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .hero {
-      background: #fff;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero h1 {
-      margin: 0 0 20px;
-      font-size: 48px;
-      color: #000;
-    }
-    .hero button {
-      padding: 15px 30px;
-      font-size: 18px;
-      background: #000;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    .games {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-    .game-card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .game-card img {
-      width: 100%;
-      height: auto;
-    }
-    .game-card .info {
-      padding: 15px;
-      flex: 1;
-    }
-    .game-card .info h3 {
-      margin: 0 0 10px;
-    }
-    .game-card .info button {
-      margin-top: auto;
-      padding: 10px;
-      background: #000;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-    footer {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .contact-form {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact-form button {
-      background: #000;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Software - Benvenuto</title>
+    <style>
+        /* Stili di base */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        /* Navbar */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* Sezione Contatti */
+        #contact {
+            padding: 60px 0;
+            background-color: #ecf0f1;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .email-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .copy-button {
+            background-color: #1abc9c;
+            color: white;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">RL Software</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#games">Giochi</a>
-      <a href="#download">Scarica</a>
-      <a href="#contacts">Contatti</a>
-      <a href="#account">Account</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header>
+        <h1>RL Software - Home</h1>
+        <nav>
+            <ul>
+                <li><a href="README.html">Home</a></li>
+                <li><a href="games.html">Videogiochi</a></li>
+                <li><a href="#contact">Contattaci</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="hero" id="home">
-    <h1>Benvenuto su RL Software</h1>
-    <button onclick="scrollToSection('games')">Scarica Ora</button>
-  </section>
+    <!-- Sezione di Contatti -->
+    <section id="contact">
+        <h2>Contattaci</h2>
+        <p>Se hai bisogno di supporto, hai domande o vuoi caricare anche tu un gioco, puoi contattarci via email:</p>
+        
+        <!-- Sezione della mail con il pulsante per copiare -->
+        <div class="email-container">
+            <strong>Email: <span id="email">software.rl25@gmail.com</span></strong>
+            <button class="copy-button" onclick="copyEmail()">Copia Email</button>
+        </div>
+        
+    </section>
 
-  <section class="games" id="games">
-    <div class="game-card">
-      <img src="placeholder.jpg" alt="Gioco 1">
-      <div class="info">
-        <h3>Gioco 1</h3>
-        <p>Descrizione breve...</p>
-        <button>Download</button>
-      </div>
-    </div>
-    <div class="game-card">
-      <img src="placeholder2.jpg" alt="Gioco 2">
-      <div class="info">
-        <h3>Gioco 2</h3>
-        <p>Descrizione breve...</p>
-        <button>Download</button>
-      </div>
-    </div>
-    <!-- altri giochi -->
-  </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 RL Software. Tutti i diritti riservati.</p>
+    </footer>
 
-  <section id="contacts">
-    <h2>Contattaci</h2>
-    <div class="contact-form">
-      <form action="mailto:software.rl25@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" rows="5" placeholder="Messaggio" required></textarea>
-        <button type="submit">Invia Messaggio</button>
-      </form>
-      <p>Oppure scrivici direttamente a: <strong>software.rl25@gmail.com</strong></p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 RL Software. Tutti i diritti riservati.
-  </footer>
-
-  <script>
-    function scrollToSection(id) {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  </script>
+    <script>
+        // Funzione per copiare la mail negli appunti
+        function copyEmail() {
+            const email = document.getElementById('email').textContent;
+            const textArea = document.createElement('textarea');
+            textArea.value = email;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            
+            // Mostra un messaggio che indica che la mail è stata copiata
+            alert("Email copiata negli appunti: " + email);
+        }
+    </script>
 
 </body>
 </html>
