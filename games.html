@@ -127,6 +127,69 @@
         .game-card a:hover {
             background-color: #16a085;
         }
+
+        /* Stili per i bottoni laterali */
+        .side-buttons {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 10; /* Assicura che siano sopra il contenuto */
+        }
+
+        .side-button {
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .side-button:hover {
+            background-color: #16a085;
+        }
+
+        /* Media query per schermi più piccoli (ad esempio, dispositivi mobili) */
+        @media (max-width: 768px) {
+            .side-buttons {
+                right: 10px; /* Sposta più a sinistra per schermi piccoli */
+            }
+
+            .side-button {
+                width: 130px; /* Rende i bottoni più piccoli sui dispositivi mobili */
+                padding: 12px 20px;
+            }
+
+            /* Per evitare che si sovrappongano al contenuto */
+            section {
+                padding: 40px 20px;
+            }
+
+            footer .container {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+        /* Media query per schermi ancora più piccoli (come smartphone portrait) */
+        @media (max-width: 480px) {
+            .side-buttons {
+                right: 5px; /* Sposta ancora più a sinistra */
+            }
+
+            .side-button {
+                width: 120px;
+                padding: 10px 18px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -148,22 +211,19 @@
     <!-- Sezione Videogiochi -->
     <section id="games">
         <div class="container">
-            <h2>Scopri i nostri Videogiochi</h2>
+            <h2>Scopri i nostri videogiochi</h2>
             <p>Esplora i nostri giochi e scarica subito quello che ti piace di più!</p>
             <h2>I giochi di RL</h2>
             <div class="game-card">
-                <img src="MRcat.jpg" alt="MRcat">
+                <img src="icons/MRcat.jpg" alt="MRcat">
                 <h3>MRcat</h3>
                 <h4>by RL</h4>
-                <a href="MRcat.zip" download="MRcat.zip">Scarica ora</a>
+                <a href="downloads/MRcat.zip" download="MRcat.zip">Scarica ora</a>
             </div>
-
-            
         </div>
         <h2>Altri giochi</h2>
         <h4>Nessun gioco disponibile</h4>
     </section>
-    
 
     <!-- Footer -->
     <footer>
@@ -172,6 +232,11 @@
         </div>
     </footer>
 
+    <!-- Bottoni laterali -->
+    <div class="side-buttons">
+        <a href="games.html" class="side-button">Download</a>
+        <a href="games-online.html" class="side-button">Gioca</a>
+    </div>
+
 </body>
 </html>
-
