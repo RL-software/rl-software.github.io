@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RL Storie</title>
+    <style>
+        /* Font e stili di base */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa; /* Colore chiaro di sfondo */
+            color: #333; /* Testo scuro per un buon contrasto */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        /* Header futuristico */
+        header {
+            background-color: #00bcd4; /* Blu elettrico per l'intestazione */
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #8A2BE2; /* Viola per il bordo inferiore */
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            letter-spacing: 1.5px;
+        }
+
+        /* Bottone principale centrale */
+        .story-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .story-buttons button {
+            background-color: #fff; /* Bottone chiaro */
+            color: #00bcd4; /* Testo blu elettrico */
+            border: 2px solid #00bcd4; /* Bordo blu elettrico */
+            padding: 18px 40px;
+            font-size: 1.6em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-buttons button:hover {
+            background-color: #8A2BE2; /* Viola elettrico al passaggio del mouse */
+            color: #fff; /* Cambia il testo in bianco */
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contenuto delle storie */
+        .main-content {
+            padding: 30px;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff; /* Fondo bianco per il contenuto delle storie */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .main-content.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .main-content h2 {
+            font-size: 2.8em;
+            color: #00bcd4; /* Blu ciano per i titoli */
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #333; /* Testo grigio scuro per la leggibilità */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: center;
+            padding: 25px 0;
+            border-top: 2px solid #8A2BE2; /* Bordo viola elettrico */
+        }
+
+        footer p {
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>RL Storie</h1>
+        <p>Scopri storie affascinanti in un mondo futuristico</p>
+    </header>
+
+    <!-- Bottoni per selezionare la storia -->
+    <div class="story-buttons">
+        <button onclick="showStory('storia1')">Info comico</button>
+        <button onclick="showStory('storia2')">Il Viaggio dell'Aquila</button>
+        <button onclick="showStory('storia3')">Il Mistero del Lago</button>
+    </div>
+
+    <!-- Storie -->
+    <div class="main-content" id="storia1">
+        <h2>Info comico</h2>
+        <p>Il professore Angelo stava tenendo una lezione di fisica sulla teoria della relatività, ma sembrava che gli studenti non fossero molto interessati. N.A.P., seduto in fondo all'aula, stava giocando con il suo telefono e disturbando gli altri studenti.
+
+A un certo punto, la porta dell'aula si aprì e entrò Delfatti, l'uomo con la barba più lunga del mondo. La sua barba era così lunga che sembrava un tappeto che si trascinava dietro di lui.
+
+N.A.P. si alzò in piedi e disse: "Ehi, guardate! È arrivato il re della barba!" Gli altri studenti risero e cominciarono a prendere foto di Delfatti.
+
+Il professore Angelo si alzò in piedi e disse: "Ehm, signori, per favore, stiamo tenendo una lezione di fisica. Delfatti, cosa ci fa qui?"
+
+Delfatti si avvicinò alla cattedra e disse: "Sono qui per parlare della mia barba. È un record mondiale, sapete?"
+
+N.A.P. si alzò in piedi e disse: "Sì, e io sono qui per dire che è la cosa più stupida che abbia mai visto!"
+
+Il professore Angelo sospirò e disse: "Bene, N.A.P., per favore, non disturbare la lezione."
+
+Ma N.A.P. non si fermò. "Ehi, Delfatti, quanto è lunga la tua barba?" chiese.
+
+Delfatti sorrise e disse: "È lunga 5 metri e 20 centimetri. È un record mondiale!"
+
+Gli studenti applaudirono e N.A.P. disse: "Sì, e io sono il re dei coglioni!"
+
+La lezione di fisica si trasformò in una discussione sulla barba di Delfatti e sulla stupidità di N.A.P. Il professore Angelo scosse la testa e disse: "Bene, credo che la lezione sia finita per oggi."
+<br>
+<br>
+La lezione di fisica era finita, ma N.A.P. non aveva ancora finito di disturbare. Mentre uscivano dall'aula, N.A.P. disse: "Ehi, Delfatti, scommetto che posso fare una barba più lunga della tua! E poi la userò per pulire il mio sedere!"
+
+Delfatti rise e disse: "Ahah, non credo proprio, N.A.P.! La mia barba è un record mondiale!"
+
+Mentre camminavano nel corridoio, incontrarono Sanfi, un altro studente che era stato nella stessa classe di N.A.P. l'anno prima. Sanfi era noto per essere un po' un coglione, ma N.A.P. lo superava di gran lunga.
+
+Sanfi disse: "Ehi, N.A.P.! Cosa stai facendo?"
+
+N.A.P. rispose: "Sto cercando di battere il record di barba di Delfatti! E poi la userò per fare un cappello per il mio cane!"
+
+Sanfi rise e disse: "Ahah, sei un genio, N.A.P.! Io posso aiutarti a fare una barba più lunga! E poi possiamo usarla per fare un letto per il mio gatto!"
+
+Il professore Angelo, che stava passando nel corridoio, sentì la conversazione e disse: "Ehi, ragazzi! Non fate sciocchezze! La barba non è importante! E poi, N.A.P., tu non sai nemmeno cosa sia la fisica!"
+
+N.A.P. si voltò verso di lui e disse: "Ehi, prof! Tu non sai niente di barbe! La tua è un disastro! E poi, la fisica è una cosa da nerd! Io sono un artista! E il mio artista preferito è... (pausa) ...io stesso!"
+
+Il professore Angelo arrossì e disse: "Ehi, N.A.P.! Non parlare così al tuo professore! E poi, tu sei un ignorante! Non sai nemmeno cosa sia la capitale della Francia!"
+
+N.A.P. rise e disse: "Ahah, prof! La capitale della Francia è... (pausa) ...Napoli! E poi, io sono il re dei coglioni! E tu sei il re dei... (pausa) ...dei coglioni professori!"
+
+Delfatti e Sanfi risero e dissero: "Sì, N.A.P.! Tu sei il migliore! E il più coglione!"
+<br>
+<br>
+
+
+N.A.P. e Sanfi entrarono nel bar della scuola, affamati dopo la lezione di fisica. Barbara, la barista, li accolse con un sorriso: "Ehi, ragazzi! Cosa vi porto?"
+
+N.A.P. rispose: "Un panino alla cotoletta e maionese, per favore! E fallo extra grande, così posso usarlo come scudo contro le frecciatine di Delfatti!"
+
+Barbara rise e disse: "Ahah, N.A.P.! Sempre pronto a scherzare! E Sanfi, cosa vuoi?"
+
+Sanfi rispose: "Un cornetto al cioccolato, per favore! E fallo extra cioccolatoso, così posso sentirmi come un re!"
+
+Delfatti, che era seduto al bancone, si voltò verso di loro e disse: "Ehi, ragazzi! Non parlate così di me! Io sono il re della barba!"
+
+N.A.P. rise e disse: "Ahah, Delfatti! Tu sei il re della barba, ma io sono il re dei coglioni! E il mio panino sarà il re dei panini!"
+
+Sanfi aggiunse: "E io sono il re del cioccolato! E il mio cornetto sarà il re dei cornetti!"
+
+Barbara rise e disse: "Ahah, ragazzi! Siete proprio due casi disperati! Ecco, vi porto le ordinazioni. Ma non fate troppo casino, o vi caccio fuori!"
+
+N.A.P. si avventò sul panino, divorandolo in pochi minuti. Sanfi si gustò il suo cornetto al cioccolato, chiudendo gli occhi per il piacere.
+
+Delfatti li guardò con invidia e disse: "Ehi, ragazzi! Come fate a mangiare così bene?"
+
+N.A.P. rispose: "È facile, Delfatti! Io ho il potere della fame! E Sanfi ha il potere del cioccolato!"
+
+Sanfi aggiunse: "E io ho il potere di fare felice Barbara con il mio sorriso!"
+
+Barbara rise e disse: "Ahah, Sanfi! Sei proprio un adulatore! Ma ti voglio bene lo stesso!"
+<br>
+<br>
+
+
+N.A.P. e Sanfi stavano ancora gustando le loro ordinazioni quando Iggy entrò nel bar. "Ehi, Barbara! Ho bisogno di 10 panini al cotoletta e maionese per la classe di fisica. Li porto via subito, grazie!" disse Iggy.
+
+Barbara sorrise e disse: "Ahah, Iggy! Sempre efficiente! Ecco, ti sto preparando i panini. Ma dimmi, come è andata la lezione di fisica oggi?"
+
+Iggy rispose: "È stata una catastrofe! Il prof Angelo non sa nemmeno cosa sia la fisica! E N.A.P. ha fatto il solito casino!"
+
+N.A.P. rise e disse: "Ahah, Iggy! Non parlare così di me! Io sono il re dei coglioni, ricordi?"
+
+Delfatti, che stava ancora seduto al bancone, si voltò verso Iggy e disse: "Ehi, Iggy! Come va la barba? Io sto ancora aspettando di battere il record mondiale!"
+
+Iggy rise e disse: "Ahah, Delfatti! La tua barba è una leggenda! Ma io sto pensando di farmi crescere i baffi per batterti!"
+
+Barbara rise e disse: "Ahah, ragazzi! Siete proprio divertenti! Ecco, Iggy, i panini sono pronti. Porta via e non dimenticare di dire agli altri che sono i migliori panini del mondo!"
+
+Iggy prese i panini e disse: "Grazie, Barbara! E non preoccuparti, lo dirò a tutti! Ciao, ragazzi!"
+
+N.A.P. e Sanfi salutarono Iggy e dissero: "Ciao, Iggy! E non dimenticare di dire al prof Angelo che siamo stati qui a mangiare i migliori panini del mondo!"
+
+Iggy rise e disse: "Ahah, non preoccuparti! Lo dirò di sicuro!"
+<br>
+<br>
+
+
+La classe era vuota, senza il professore. N.A.P. stava chiacchierando quando Tedesco si alzò in piedi e cominciò a parlare. "Sì, sì, ragazzi! La barba di Delfatti è incredibile! È un'opera d'arte, un simbolo di libertà, di indipendenza, di... di... uh, di barba!"
+
+Delfatti, con un'espressione assente, disse: "Barba? Quale barba? Ah sì, la mia barba! È lunga, vero?"
+
+N.A.P. rise e disse: "Delfatti, sei proprio un genio! Non sai nemmeno di cosa stiamo parlando!"
+
+Tedesco continuò a parlare. "Sì, sì, Delfatti, la tua barba è famosa! È un record mondiale, vero?"
+
+Delfatti annuì. "Sì, sì, record mondiale! Io sono il re della barba! (pausa) Ehi, ragazzi, sapete cosa è verde e puzza?"
+
+N.A.P. sospirò e disse: "Delfatti, per favore, non dire cose stupide! Tedesco, puoi parlare di qualcos'altro?"
+
+Ma Tedesco non si fermò. "No, no, N.A.P., la barba di Delfatti è importante! È un simbolo di... di... uh, di... (pausa)"
+
+Iggy entrò in classe e disse: "Ehi, ragazzi! Cosa state facendo?"
+
+Tedesco si voltò verso di lui e disse: "Ah, Iggy! Stiamo discutendo della barba di Delfatti! È una storia incredibile, Iggy!"
+
+Delfatti si alzò in piedi e disse: "Sì, sì, Iggy! La mia barba è la migliore! (pausa) Ehi, ragazzi, sapete cosa è rosso e vola?"
+
+La classe cominciò a ridere e a scherzare, mentre Tedesco continuava a parlare senza sosta e Delfatti diceva cose sempre più stupide. N.A.P. si alzò in piedi e disse: "Delfatti, basta! Sei proprio un caso disperato!"
+<br>
+<br>
+
+
+Il giorno dopo, la classe era vuota, senza il prof Angelo. N.A.P. esclamò: "Sì! Finalmente il prof Angelo è stato derubato! Non dobbiamo più andare a lezione!"
+
+Iggy rise e disse: "Sì, è vero! Gli hanno svuotato il conto in banca! È il giorno più felice della mia vita!"
+
+Tedesco si alzò in piedi e cominciò a parlare. "Sì, sì, ragazzi! Il prof Angelo è stato punito! È un giorno di festa, un vero e proprio... uh, uh... (pausa)"
+
+Delfatti, con un'espressione assente, disse: "Festa? Sì, sì, festa! Io voglio andare a mangiare panini e bere birra! (pausa) E voglio anche fare una foto con la mia barba!"
+
+N.A.P. rise e disse: "Delfatti, sei proprio un genio! La tua barba è il simbolo della nostra libertà!"
+
+La classe cominciò a ridere e a scherzare, mentre Tedesco continuava a parlare senza sosta e Delfatti diceva cose sempre più stupide. Iggy si alzò in piedi e disse: "Ragazzi, dobbiamo festeggiare! Andiamo a mangiare panini e bere birra!"
+
+Tutti si alzarono in piedi e cominciarono a cantare: "Il prof Angelo è stato derubato! Il prof Angelo è stato derubato!"
+
+Delfatti si unì al coro e disse: "E la mia barba è il simbolo della nostra vittoria!"
+<br>
+<br>
+La classe era ancora in festa quando la porta si aprì e BRD, il docente di informatica, entrò nella stanza. "Buongiorno, ragazzi! Sono qui per fare supplenza durante l'ora di fisica, giusto!?"
+
+N.A.P. rise e disse: "BRD, cosa ci fai qui? Non sai che il prof Angelo è stato derubato?"
+
+BRD rispose: "Sì, sì, lo so, giusto!? Ma io sono qui per insegnarvi qualcosa di importante sul mio sito web, giusto!? È un sito molto utile, giusto!?"
+
+Tedesco si alzò in piedi e cominciò a parlare. "Sì, sì, BRD! Il tuo sito è un disastro! Non va sul telefono e ha un design orribile."
+
+Delfatti, con un'espressione assente, disse: "BRD, il tuo sito è brutto. Perché l'hai fatto così?"
+
+BRD rise e disse: "Ah, no, no! Il mio sito è perfetto, giusto!? È stato progettato per essere utilizzato solo su computer, giusto!?"
+
+Iggy rise e disse: "BRD, ma quasi tutti usano il telefono! Il tuo sito è inutile."
+
+BRD si arrabbiò e disse: "Cosa? No, no! Il mio sito è utile, giusto!? Voi non capite niente di informatica, giusto!?"
+
+La classe cominciò a ridere e a scherzare, mentre BRD continuava a dire "giusto!?" senza sosta. N.A.P. si alzò in piedi e disse: "BRD, basta! Il tuo sito è un disastro e tu sei un coglione."
+
+BRD rispose: "No, no! Io sono un genio, giusto!? Il mio sito è perfetto, giusto!?"
+
+La classe continuò a ridere e a scherzare, mentre BRD continuava a dire "giusto!?" senza capire che stava facendo la figura del coglione.
+
+<br>
+<br>
+
+La classe stava ancora ridendo e scherzando quando la porta si aprì e il Prof Greco, il vicepreside, entrò nella stanza. "BRD, cosa stai facendo qui? Non sei capace di insegnare niente a questi ragazzi!"
+
+BRD si alzò in piedi e disse: "Prof Greco, sono qui per fare supplenza, giusto!?"
+
+Il Prof Greco lo interruppe. "Supplenza? Tu non sei capace di fare supplenza! L'anno scorso hai tirato un calcio a uno studente e adesso sei qui a disturbare di nuovo! Sembra che tu ti sia allenato solo per quel calcio!"
+
+La classe cominciò a ridere e a scherzare, ricordando l'episodio dell'anno prima. N.A.P. disse: "Sì, Prof Greco, BRD è un vero campione di calcio... involontario!"
+
+Iggy aggiunse: "E il calcio è stato... memorabile!"
+
+Il Prof Greco si arrabbiò. "Basta, ragazzi! BRD, tu sei un problema per questa scuola. Non sei capace di insegnare e non sei capace di comportarti in modo civile. Vattene subito!"
+
+BRD si alzò in piedi e disse: "Ma, Prof Greco, giusto!? Io sono un buon insegnante, giusto!?"
+
+Il Prof Greco lo interruppe di nuovo. "No, BRD, tu non sei un buon insegnante. Tu sei un disastro. Vattene subito e non tornare più!"
+
+BRD uscì dalla stanza, sconfitto, mentre la classe continuava a ridere e a scherzare. Il Prof Greco si voltò verso la classe e disse: "E voi, ragazzi, comportatevi bene. Non voglio più vedere scene come questa."
+
+La classe si calmò e il Prof Greco continuò: "Adesso, cercheremo di trovare un altro insegnante per sostituire il Prof Angelo. Spero che sia migliore di BRD."
+</p>
+    </div>
+
+    <div class="main-content" id="storia2">
+        <h2>Il Viaggio dell'Aquila</h2>
+        <p>Nel cielo azzurro, un'aquila vola alta, cercando di capire il significato della sua esistenza. Durante il suo viaggio, incontra altre creature che le mostrano diversi modi di vedere il mondo... (continua)</p>
+    </div>
+
+    <div class="main-content" id="storia3">
+        <h2>Il Mistero del Lago</h2>
+        <p>Un piccolo villaggio si trova vicino a un lago cristallino, ma nessuno osa avvicinarsi al suo centro. Si dice che chiunque lo faccia scompaia misteriosamente. Un coraggioso ragazzo, Marco, decide di affrontare la leggenda... (continua)</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 RL Storie. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script>
+        // Funzione per mostrare la storia selezionata
+        function showStory(storyId) {
+            // Nascondi tutte le storie
+            const stories = document.querySelectorAll('.main-content');
+            stories.forEach(story => {
+                story.classList.remove('active');
+            });
+
+            // Mostra la storia selezionata
+            const selectedStory = document.getElementById(storyId);
+            selectedStory.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
